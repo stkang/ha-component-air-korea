@@ -158,19 +158,22 @@ class AirKoreaSensor(CoordinatorEntity, SensorEntity):
         if self._item.data_name not in result:
             return
         state = result[self._item.data_name]
-        if 'Time' in self._item.data_name:
-            self._attr_native_value = state
-            return
+        try:
+            if 'Time' in self._item.data_name:
+                self._attr_native_value = state
+                return
 
-        if 'Value' in self._item.data_name:
-            self._attr_native_value = to_float(state)
-            if not self._attr_icon and self._item.data_name.endswith('Value'):
-                data_name = self._item.data_name.replace('Value', 'Grade')
-                if data_name in result:
-                    self.update_state_icon(result[data_name])
-            return
-        if 'Grade' in self._item.data_name:
-            self.update_state_grade(state)
+            if 'Value' in self._item.data_name:
+                self._attr_native_value = to_float(state)
+                if not self._attr_icon and self._item.data_name.endswith('Value'):
+                    data_name = self._item.data_name.replace('Value', 'Grade')
+                    if data_name in result:
+                        self.update_state_icon(result[data_name])
+                return
+            if 'Grade' in self._item.data_name:
+                self.update_state_grade(state)
+        finally:
+            self.async_write_ha_state()
 
     async def async_added_to_hass(self) -> None:
         """상태 업데이트 콜백을 등록합니다."""
