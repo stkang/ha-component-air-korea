@@ -1,0 +1,6 @@
+{
+    "name": "[KR] 에어 코리아",
+    "country": "KR",
+    "domains": ["sensor"],
+    "render_readme": true
+  }
