@@ -8,8 +8,9 @@
 
 
 ## 에어코리아가 도움이 되셨나요?
-TOSS로 기부하기  
-<img src="./images/toss-donation.png" title="TOSS Donation" alt="TOSS Donation" width="200" />
+| TOSS로 기부하기                                                                                                                                                         | 카카오 페이로 기부하기                                                                                                                                                         |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/stkang/ha-component-air-korea/blob/master/images/toss-donation.png?raw=true" title="TOSS Donation" alt="TOSS Donation" width="200" /> | <img src="https://github.com/stkang/ha-component-air-korea/blob/master/images/kakao-donation.png?raw=true" title="Kakao Donation" alt="https://qr.kakaopay.com/Ej8KRJWgv" width="200" /> | 
 
 ## 준비물
 - HomeAssistant `최신버전`
