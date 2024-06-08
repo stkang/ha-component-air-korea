@@ -2,7 +2,7 @@
 
 ![HACS][hacs-shield]
 
-<img src="./images/showcase.png" title="Showcase" alt="Showcase" />
+<img src="https://github.com/stkang/ha-component-air-korea/blob/master/images/showcase.png?raw=true" title="Showcase" alt="Showcase" />
 
 문의 : 네이버 [HomeAssistant카페](https://cafe.naver.com/koreassistant)
 
@@ -51,7 +51,7 @@
 - 측정소에는 에어코리아에서 찾은 측정소명을 입력.
 
 
-<img src="./images/config_flow.png" title="ConfigFlow" alt="ConfigFlow" />
+<img src="https://github.com/stkang/ha-component-air-korea/blob/master/images/config_flow.png?raw=true" title="ConfigFlow" alt="ConfigFlow" />
 
 
 [hacs-shield]: https://img.shields.io/badge/HACS-Custom-red.svg
