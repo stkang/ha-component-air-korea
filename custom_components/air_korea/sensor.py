@@ -4,12 +4,12 @@ from dataclasses import dataclass
 from typing import List, Optional
 
 from homeassistant.components.sensor import SensorEntity, SensorDeviceClass, SensorStateClass
-from homeassistant.core import HomeAssistant, DOMAIN, callback
+from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.device_registry import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from . import AirKoreaCoordinator, AirKoreaConfigEntry
-from .const import TITLE, MODEL
+from .const import DOMAIN, TITLE, MODEL
 
 _LOGGER = logging.getLogger(__name__)
 
